@@ -1,6 +1,3 @@
-
-
-
 const express = require("express");
 const app = express();
 
@@ -15,7 +12,7 @@ app.use(express.json());
 const todoRoutes = require("./routes/todos");
 
 //mount the todo API routes
-app.use("/api/v1", todoRoutes);
+app.use("/api/v1", todoRoutes); 
 
 
 //start server
